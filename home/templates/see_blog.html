@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block start %}
+<section class="mt-5 pt-5 row justify-content-center">
+    <div class="col-auto">
+    <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">S.no</th>
+            <th scope="col">title</th>
+            <th scope="col">created_at</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+            {% for blog in blog_objs %}
+            <tr>
+                <th scope="row">{{ forloop.counter }}</th>
+                <td><a href="{% url 'blog_detail' blog.slug %}">{{blog.title}}</a></td>
+                <td>{{blog.created_at}}</td>
+                <td>
+                    <a href="{% url 'blog_update' blog.slug %}" class="btn btn-success">Update</a>
+                    <a href="{% url 'blog_delete' blog.id %}" class="btn btn-warning">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+    </div>
+</section>
+
+{% endblock %}
