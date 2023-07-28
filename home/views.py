@@ -104,6 +104,9 @@ def addblog_view(request):
 def register_view(request):
     return render(request,"register.html")
 
+def featured(request):
+    return render(request,"post.html")
+
 
 def verify(request,token):
     try:
