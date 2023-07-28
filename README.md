@@ -3,6 +3,12 @@
 
 TravelDiaries is a full-fledged blogging website built using Python, Django, SQLite, HTML, CSS,Bootstrap and JavaScript. The platform allows travelers to share their exciting adventures and travel experiences with the world. This repository contains the source code and resources required to set up and run the TravelDiaries website.
 
+
+## Video
+
+https://github.com/jaiydv/traveldiaries/assets/85070747/9143e997-db10-4e66-bcfe-9bb856df705b
+
+
 ## Features
 
 - **Blogging Made Easy:** TravelDiaries provides a user-friendly interface with the Froala Editor, empowering users to create and customize their travel blog posts with ease.
